@@ -1,0 +1,28 @@
+import java.io.*;
+class Factorial
+{
+	int fact(n);
+	{
+		if(n==0||n==1)
+		{
+			return 1;
+		}
+		else
+		{
+			return n*fact(n-1);
+		}
+	}
+}
+class FactorialMethod
+{
+	public static void main(String args[])
+	{
+		int n,fa;
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter n value");
+		n=s.nextInt();
+		Factorial f=new Factorial();
+		fa=f.fact(n);
+		System.out.println("Factorial of"+n+"is:"+fa);
+	}
+}
